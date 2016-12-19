@@ -1,0 +1,2 @@
+www-data ALL = NOPASSWD: /usr/bin/rmtrack [0-9]*.[0-9]*.[0-9]*.[0-9]*
+www-data ALL = NOPASSWD: /sbin/iptables -t mangle -A wlan0_Outgoing  -m mac --mac-source ??\:??\:??\:??\:??\:?? -j MARK --set-mark 2
